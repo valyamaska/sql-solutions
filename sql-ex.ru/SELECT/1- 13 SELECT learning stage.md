@@ -168,3 +168,24 @@ WHERE maker = 'A'
 |---------|
 |   606   |
 
+
+## Задача 14
+
+Найдите класс, имя и страну для кораблей из таблицы Ships, имеющих не менее 10 орудий.
+
+```sql
+SELECT sh.class, sh.name, c.country
+FROM Ships AS sh
+JOIN Classes AS c ON sh.class = c.class
+WHERE c.numGuns >= 10
+```
+
+|    class	   |     name	    |country|
+|--------------|--------------|-------|
+|   Tennessee  |  California. |	 USA  |
+|North Carolina|North Carolina|	 USA  |
+|North Carolina| South Dakota |	 USA  |
+|  Tennessee	 |  Tennessee	  |  USA  |
+|North Carolina|  Washington  |  USA  |
+
+
