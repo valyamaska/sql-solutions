@@ -61,10 +61,10 @@ FROM Printer
 WHERE color = 'y'
 ```
 
-|code|model|color|type|price|
-|----|-----|-----|----|-----|
-| 3	 |1434 |  y	 | Jet|290.0|
-| 2	 |1433 |  y	 | Jet|270.0|
+|code|model|color|type| price   |
+|----|-----|-----|----|---------|
+| 3	 |1434 |  y	 | Jet|290.00000|
+| 2	 |1433 |  y	 | Jet|270.00000|
 
 ## Задача 5
 
@@ -99,6 +99,58 @@ WHERE p.type = 'Laptop' AND hd >= 10
 |  A	| 750 |
 |  B	| 750 |
 
+## Задача 9
 
+Найдите производителей ПК с процессором не менее 450 Мгц. Вывести: Maker
 
+```sql
+SELECT DISTINCT p.maker
+FROM Product AS p
+JOIN PC AS pc ON p.model = pc.model
+WHERE p.type = 'PC' AND pc.speed >= 450
+```
+|maker|
+|-----|
+|  A  |
+|  B  |
+|  E  |
+
+## Задача 10
+
+Найдите модели принтеров, имеющих самую высокую цену. Вывести: model, price
+
+```sql
+SELECT model, price
+FROM Printer
+WHERE price = (SELECT MAX(price) FROM Printer)
+```
+|model|	price  |
+|-----|--------|
+|1288	|400.0000|
+|1276	|400.0000|
+
+## Задача 11
+
+Найдите среднюю скорость ПК.
+
+```sql
+SELECT AVG(speed) as avg_speed
+FROM PC
+```
+|avg_speed|
+|---------|
+|  608    |
+
+## Задача 12
+
+Найдите среднюю скорость ноутбуков, цена которых превышает 1000 дол.
+
+```sql
+SELECT AVG(speed) as avg_speed
+FROM Laptop
+WHERE price > 1000
+```
+|avg_speed|
+|---------|
+|   700   |
 
