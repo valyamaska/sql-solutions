@@ -154,3 +154,17 @@ WHERE price > 1000
 |---------|
 |   700   |
 
+## Задача 13
+
+Найдите среднюю скорость ПК, выпущенных производителем A.
+
+```sql
+SELECT AVG(speed) as avg_speed
+FROM PC
+JOIN Product as p ON PC.model = p.model
+WHERE maker = 'A'
+```
+|avg_speed|
+|---------|
+|   606   |
+
