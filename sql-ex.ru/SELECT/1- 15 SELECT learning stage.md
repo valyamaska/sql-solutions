@@ -188,4 +188,22 @@ WHERE c.numGuns >= 10
 |  Tennessee	 |  Tennessee	  |  USA  |
 |North Carolina|  Washington  |  USA  |
 
+## Задача 15
+
+Найдите размеры жестких дисков, совпадающих у двух и более PC. Вывести: HD
+
+```sql
+SELECT hd
+FROM PC
+GROUP BY hd
+HAVING COUNT(*) >= 2
+```
+| hd |
+|----|
+|5.0 |
+|8.0 |
+|10.0|
+|14.0|
+|20.0|
+
 
