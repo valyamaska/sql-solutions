@@ -32,7 +32,26 @@ VALUES('Z', 4003, 'Printer'),
 INSERT INTO PC (model, code, speed, price)
 VALUES(4444, 22, 1200, 1350)
 ```
-## Зaдание 4
+## Зaдание 5
+
+Удалить из таблицы PC компьютеры, имеющие минимальный объем диска или памяти.
 
 ```sql
+DELETE FROM PC
+WHERE hd = (SELECT MIN(hd) FROM PC) OR ram = (SELECT MIN(ram) FROM PC)
+```
+## Зaдание 6
+
+Удалить все блокноты, выпускаемые производителями, которые не выпускают принтеры.
+
+``sql
+DELETE FROM Laptop
+WHERE model IN (SELECT model FROM Product WHERE type = 'laptop'
+      AND maker NOT IN (
+          SELECT maker
+          FROM Product
+          WHERE type = 'printer'))
+```
+
+
 
