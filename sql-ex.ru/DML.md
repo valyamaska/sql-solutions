@@ -44,7 +44,7 @@ WHERE hd = (SELECT MIN(hd) FROM PC) OR ram = (SELECT MIN(ram) FROM PC)
 
 Удалить все блокноты, выпускаемые производителями, которые не выпускают принтеры.
 
-``sql
+```sql
 DELETE FROM Laptop
 WHERE model IN (SELECT model FROM Product WHERE type = 'laptop'
       AND maker NOT IN (
