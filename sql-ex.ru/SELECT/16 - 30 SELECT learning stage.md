@@ -1,3 +1,19 @@
+## Задача 17
+
+Найдите модели ноутбуков, скорость которых меньше скорости каждого из ПК.
+Вывести: type, model, speed
+
+```sql
+SELECT DISTINCT p.type, p.model, l.speed
+FROM Laptop AS l
+JOIN Product AS p ON l.model = p.model
+WHERE l.speed < (SELECT MIN(speed) FROM PC) and p.type = 'Laptop'
+```
+| type |model|speed|
+|------|-----|-----|
+|Laptop| 1298| 350 |
+
+
 ## Задача 19
 
 Для каждого производителя, имеющего модели в таблице Laptop, найдите средний размер экрана выпускаемых им ноутбуков.
