@@ -15,5 +15,18 @@ GROUP BY P.maker
 |  B	|    14    |
 |  C	|    12    |
 
+## Задача 20
 
+Найдите производителей, выпускающих по меньшей мере три различных модели ПК. Вывести: Maker, число моделей ПК.
+
+```sql
+SELECT maker, COUNT(model) as count_model
+FROM Product 
+WHERE type = 'PC'
+GROUP BY maker
+HAVING count(*) >= 3
+```
+|maker|count_model|
+|-----|-----------|
+|  E	|     3     |
 
