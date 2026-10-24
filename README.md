@@ -5,8 +5,6 @@
 
 ## Содержание
 - `sql-ex.ru/` — задачи: SELECT, JOIN, GROUP BY, агрегатные функции, подзапросы, DML 
-- `sql-academy/` — задачи: SELECT, JOIN, GROUP BY, агрегатные функции, подзапросы
-- `leetcode/` — задачи: SELECT, JOIN, GROUP BY, агрегатные функции, подзапросы
 
 ## Что отработано
 - Выборка и фильтрация данных (SELECT, WHERE)
