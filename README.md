@@ -1,12 +1,12 @@
 # SQL solutions
 
-Мои решения задач по SQL с платформ для практики.
+Мои решения задач по SQL с платформ для практики https://sql-ex.ru .
 Цель: отработать работу с данными для позиции стажёра-аналитика.
 
 ## Содержание
-- `sql-ex.ru/` — [N] задач: SELECT, JOIN, GROUP BY, агрегатные функции, подзапросы, DML ([N] задач)
-- `sql-academy/` — [N] задач: [темы]
-- `leetcode/` — [N] задач: [темы]
+- `sql-ex.ru/` — задачи: SELECT, JOIN, GROUP BY, агрегатные функции, подзапросы, DML 
+- `sql-academy/` — задачи: SELECT, JOIN, GROUP BY, агрегатные функции, подзапросы
+- `leetcode/` — задачи: SELECT, JOIN, GROUP BY, агрегатные функции, подзапросы
 
 ## Что отработано
 - Выборка и фильтрация данных (SELECT, WHERE)
@@ -19,6 +19,6 @@
 [MS SQL Server / PostgreSQL / MySQL — то, что использует платформа]
 
 ## Контакты
-[Telegram / email]
+[@valya_mas / valentinamaslennikova589@gmail.com]
 
-Здесь содержатся мои решения на задачи с https://sql-ex.ru 
+
