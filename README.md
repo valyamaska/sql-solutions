@@ -17,6 +17,6 @@
 [MS SQL Server / PostgreSQL / MySQL — то, что использует платформа]
 
 ## Контакты
-[@valya_mas / valentinamaslennikova589@gmail.com]
+[тг @valya_mas / valentinamaslennikova589@gmail.com]
 
 
